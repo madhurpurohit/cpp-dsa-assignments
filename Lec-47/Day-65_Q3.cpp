@@ -7,8 +7,8 @@
 //* char *str = "Hello, World!";. Here, str is a non - constant pointer to non - constant characters.This means that both the pointer str and the characters it points to can be modified.
 
 //! Key Difference:-
-//*In the first case, attempting to modify the characters pointed to by str will result in a compiler error.
-//* In the second case, modifying the characters pointed to by str is allowed, but it's generally not a good idea, as string literals are often stored in read-only memory.
+//*In the first case, attempting to modify the characters pointed to by str will result in a compiler error. The string data is immutable (constant), but the pointer str itself can point to different constant strings (you can make str point to another string later).
+//* In the second case, modifying the characters pointed to by str is allowed, but it's generally not a good idea, as string literals are often stored in read-only memory. This is less safe than using const char * because it falsely implies that you can modify the string when you actually cannot.
 
 //? if you want to ensure that the characters pointed to by a pointer are not modified, use the const keyword. If you need to modify the characters, use a non-constant pointer, but be aware of the potential risks.
 
