@@ -1,4 +1,4 @@
-//* Permutation of an array.Time complexity: O(N*N!), Space Complexity: O(n).
+//* Permutation of an array.Time complexity: O(N*N!), Space Complexity: O(n!).
 //* Visualization:- https://excalidraw.com/#json=pQn4p9P6tyPq0dR7rLNoz,4sntibdXKkmB1P0v2tEn-Q
 #include <iostream>
 #include <vector>
